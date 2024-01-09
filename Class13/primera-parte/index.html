@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Cat</title>
+</head>
+<body>
+    <h1>New Cat</h1>
+    <div id="imagenContainer">
+
+        <img id="catImage">
+
+    </div>
+    <script>
+
+        const catImage = document.getElementById('catImage')
+
+        function  fetchCat (){
+            fetch('https://api.thecatapi.com/v1/images/search')
+            .then(response => response.json())
+            .then(data => {
+                const imagenUrl = data[0].url
+                catImage.src = imagenUrl;
+            })
+            .catch(error =>{
+                console.log("Error al traer la foto de la mascota", error)
+            })
+        }
+
+        // Eventos
+        window.addEventListener('load',  fetchCat)
+
+        catImage.addEventListener('click', fetchCat)
+        
+    </script>
+    
+</body>
+</html>

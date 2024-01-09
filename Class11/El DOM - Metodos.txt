@@ -1,0 +1,80 @@
+El DOM (Document Object Model) proporciona varios métodos que te permiten interactuar con los elementos y nodos de una página web. A continuación, te explico algunos de los métodos más comunes del DOM:
+
+1. `getElementById(id)`: Este método se utiliza para obtener un elemento del DOM por su identificador único (id). Devuelve el primer elemento cuyo id coincida con el valor proporcionado. Si no se encuentra ningún elemento con el id especificado, devuelve `null`.
+
+2. `getElementsByClassName(className)`: Este método se utiliza para obtener una lista de elementos que tienen una clase específica. Devuelve una colección HTML de todos los elementos cuya clase coincide con el valor proporcionado.
+
+3. `getElementsByTagName(tagName)`: Este método se utiliza para obtener una lista de elementos con un nombre de etiqueta específico. Devuelve una colección HTML de todos los elementos que coinciden con el nombre de etiqueta especificado.
+
+4. `querySelector(selector)`: Este método devuelve el primer elemento que coincida con un selector CSS específico. Puedes usar selectores CSS como `#id`, `.class`, `tag`, etc., para seleccionar elementos.
+
+5. `querySelectorAll(selector)`: Este método devuelve una lista de todos los elementos que coinciden con un selector CSS específico. Al igual que `querySelector()`, puedes utilizar selectores CSS para seleccionar elementos.
+
+6. `createElement(tagName)`: Este método crea un nuevo elemento HTML con el nombre de etiqueta especificado. Puedes usar este elemento para construir contenido dinámicamente antes de agregarlo al DOM.
+
+7. `appendChild(element)`: Este método se utiliza para agregar un nuevo elemento como hijo de otro elemento existente. Puedes usarlo para insertar un nuevo elemento dentro de otro.
+
+8. `removeChild(element)`: Este método se utiliza para eliminar un elemento hijo de otro elemento. Debes proporcionar el elemento hijo que deseas eliminar.
+
+9. `setAttribute(name, value)`: Este método se utiliza para establecer el valor de un atributo en un elemento. Puedes usarlo para agregar o modificar atributos en un elemento.
+
+10. `removeAttribute(name)`: Este método se utiliza para eliminar un atributo de un elemento. Debes proporcionar el nombre del atributo que deseas eliminar.
+
+11. `addEventListener(event, callback)`: Este método se utiliza para agregar un evento a un elemento. Puedes proporcionar el nombre del evento (como "click", "mouseover", etc.) y una función de devolución de llamada que se ejecutará cuando ocurra el evento.
+
+12. `removeEventListener(event, callback)`: Este método se utiliza para eliminar un evento de un elemento. Debes proporcionar el nombre del evento y la misma función de devolución de llamada que se agregó previamente con `addEventListener()`.
+
+Estos son solo algunos de los métodos más comunes del DOM que te permiten interactuar y manipular los elementos y nodos de una página web. Puedes utilizar estos métodos en combinación con JavaScript para crear páginas web interactivas y dinámicas.
+
+------------------------------------------------------------------------
+Métodos de Array en Js. 
+
+// Ejemplo de un array de números
+const numeros = [10, 20, 30, 40, 50];
+
+// Métodos más comunes para manipular arrays:
+
+// 1. push(): Agrega un elemento al final del array.
+numeros.push(60); // [10, 20, 30, 40, 50, 60]
+
+// 2. pop(): Elimina el último elemento del array y lo devuelve.
+const ultimoElemento = numeros.pop(); // [10, 20, 30, 40, 50], ultimoElemento = 60
+
+// 3. shift(): Elimina el primer elemento del array y lo devuelve.
+const primerElemento = numeros.shift(); // [20, 30, 40, 50], primerElemento = 10
+
+// 4. unshift(): Agrega un elemento al principio del array.
+numeros.unshift(5); // [5, 20, 30, 40, 50]
+
+// 5. length: Propiedad que devuelve la cantidad de elementos en el array.
+const cantidadElementos = numeros.length; // 5
+
+// 6. indexOf(elemento): Devuelve el índice del primer elemento encontrado o -1 si no lo encuentra.
+const indice30 = numeros.indexOf(30); // 2
+
+// 7. slice(inicio, fin): Devuelve una copia de una porción del array.
+const subArray = numeros.slice(1, 4); // [20, 30, 40]
+
+// 8. splice(inicio, cantidad, elemento1, elemento2, ...): Cambia el contenido del array eliminando o reemplazando elementos existentes y/o agregando nuevos elementos.
+numeros.splice(2, 2, 35, 45); // [5, 20, 35, 45, 50]
+
+// 9. forEach(callback): Ejecuta una función de devolución de llamada por cada elemento del array.
+numeros.forEach((elemento, indice) => {
+  console.log(`Elemento en el índice ${indice}: ${elemento}`);
+});
+
+// 10. map(callback): Crea un nuevo array con el resultado de la función de devolución de llamada aplicada a cada elemento del array original.
+const cuadrados = numeros.map(elemento => elemento * elemento); // [25, 400, 1225, 2025, 2500]
+
+// 11. filter(callback): Crea un nuevo array con todos los elementos que pasan la prueba implementada por la función de devolución de llamada.
+const mayores30 = numeros.filter(elemento => elemento > 30); // [35, 45, 50]
+
+// 12. reduce(callback, valorInicial): Aplica una función de devolución de llamada acumulativamente a cada elemento del array para reducirlo a un único valor.
+const sumaTotal = numeros.reduce((acumulador, elemento) => acumulador + elemento, 0); // 155
+
+// 13. find(callback): Devuelve el primer elemento del array que cumple con la condición dada por la función de devolución de llamada.
+const encontrado = numeros.find(elemento => elemento === 45); // 45
+
+// 14. includes(elemento): Determina si el array incluye un determinado elemento y devuelve true o false.
+const incluye20 = numeros.includes(20); // true
+const incluye100 = numeros.includes(100); // false

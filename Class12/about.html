@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog</title>
+</head>
+<body>
+
+    <h1>Dog</h1>
+    <div id="dogData"></div>
+
+    <script>
+        fetch('https://api.thedogapi.com/v1/breeds/1')
+        .then(response => response.json())
+        .then(data => {
+                const dogData = document.getElementById('dogData');
+
+                const imagenUrl = data.image ? data.image.url : '';
+
+                dogData.innerHTML = `
+                    <p><strong>Name:</strong> ${data.name}</p>
+                    <p><strong>Origin:</strong> ${data.origin}</p>
+                    <p><strong>Bred For:</strong> ${data.bred_for}</p>
+                    <p><strong>Life Span:</strong> ${data.life_span}</p>
+                    <p><strong>Temperament:</strong> ${data.temperament}</p>
+                    <img src="${data.image.url}" alt="${data.name}">
+                `;
+            })
+        .catch((error) =>{
+        console.error('error:', error)
+    });
+    </script>
+    
+</body>
+</html>
