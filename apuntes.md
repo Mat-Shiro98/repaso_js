@@ -63,6 +63,8 @@
 
 ## Event
 
+* Click: Ocurre cuando un elemento es presionado con el ratón.
+* Click: Ocurre cuando un elemento es presionado con el ratón.
 > Click: Ocurre cuando un elemento es presionado con el ratón.
 > Doble clic: Ocurre cuando un elemento es presionado dos veces rápidamente con el ratón.
 > Mouseover: Ocurre cuando el puntero del ratón se sitúa sobre un elemento.
