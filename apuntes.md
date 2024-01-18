@@ -64,15 +64,13 @@
 ## Event
 
 * Click: Ocurre cuando un elemento es presionado con el ratón.
-* Click: Ocurre cuando un elemento es presionado con el ratón.
-> Click: Ocurre cuando un elemento es presionado con el ratón.
-> Doble clic: Ocurre cuando un elemento es presionado dos veces rápidamente con el ratón.
-> Mouseover: Ocurre cuando el puntero del ratón se sitúa sobre un elemento.
-> Change: Ocurre cuando el valor de un elemento de formulario (como un cuadro de texto o una casilla de verificación) cambia.
-> Submit: Ocurre cuando se envía un formulario.
-> KeyDown, KeyUp: Ocurren cuando una tecla del teclado se presiona o se libera, respectivamente.
-> Load: Ocurre cuando un recurso, como una imagen, se ha cargado completamente.
-> DOMContentLoaded: Ocurre cuando el DOM de la página ha sido completamente cargado.
+* Doble clic: Ocurre cuando un elemento es presionado dos veces rápidamente con el ratón.
+* Mouseover: Ocurre cuando el puntero del ratón se sitúa sobre un elemento.
+* Change: Ocurre cuando el valor de un elemento de formulario (como un cuadro de texto o una casilla de verificación) cambia.
+* Submit: Ocurre cuando se envía un formulario.
+* KeyDown, KeyUp: Ocurren cuando una tecla del teclado se presiona o se libera, respectivamente.
+* Load: Ocurre cuando un recurso, como una imagen, se ha cargado completamente.
+* DOMContentLoaded: Ocurre cuando el DOM de la página ha sido completamente cargado.
 
 ------------------------------------------------
 
