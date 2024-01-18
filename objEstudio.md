@@ -32,4 +32,6 @@
 Escribe una función llamada  contarVocales que reciba una cadena de texto como parámetro y devuelva la cantidad de vocales (a, e, i, o, u) presentes en esa cadena.
 
 
-3. Generar una clave por grupo 
+
+
+

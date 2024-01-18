@@ -1,5 +1,6 @@
 function initMap() {
     const centroMapa = { lat: -34.6083, lng: -58.3712 };
+    //const $mapContainer = document.getElementById('map-container');
 
     const mapa = new google.maps.Map(document.getElementById('map-container'), {
         center: centroMapa,
