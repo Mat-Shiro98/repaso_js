@@ -37,4 +37,5 @@ otraPersona.edad = 700;
 
 //2. Objetos JSON
 let jsonPersona = '{"nombre": "Juan", "apellido": "Perez", "edad": 25, "ciudad": "Buenos Aires"}';
+console.log(jsonPersona("nombre"))
 
