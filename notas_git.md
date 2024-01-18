@@ -46,6 +46,12 @@
 >>> Listo! una vez creado el commit ya tenes tu "primera" versión de codigo
 >>> Recordar que antes de usar el commit tienes que usar el git add .
 
+# Git push: Subir al repositorio
+
+> Una vez echo el commit se ejecuta el git push con el nombre de la rama que quieres subir
+
+    git push origin main
+
 # Git branch: Cambio de ramas 
 >En Git, un branch es una versión nueva/separada del repositorio principal.
 

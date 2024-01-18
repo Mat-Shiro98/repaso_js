@@ -1,8 +1,8 @@
-Ejercicio: Lista de compras Interactiva
+# Ejercicio: Lista de compras Interactiva
 ------------------------------------------------
 
-Crea una aplicación web simple que permita a los usuarios gestionar una lista de compras.
-La aplicación debe tener las siguientes funcionalidades:
+>Crea una aplicación web simple que permita a los usuarios gestionar una lista de compras.
+>La aplicación debe tener las siguientes funcionalidades:
 
 1. Un campo de entrada de texto para que los usuarios ingresen nuevos elementos a la lista
 
@@ -31,14 +31,14 @@ ha sido comprado(puedes utilizar tachado,cambio de color, etc...)
 </head>
 <body>
 
-    <h1>Lista de Compras</h1>
+<h1>Lista de Compras</h1>
 
-    <input type="text" id="nuevoElemento" placeholder="Ingrese un nuevo elemento">
+<input type="text" id="nuevoElemento" placeholder="Ingrese un nuevo elemento">
     <button onclick="agregarElemento()">Agregar</button>
     <ul id="listaCompras"></ul>
     <button onclick="limpiarComprados()">Limpiar</button>
 
-    <script>
+   <script>
         function agregarElemento() {
             const nuevoElemento = document.getElementById('nuevoElemento').value.trim();
             if (nuevoElemento !== '') {
