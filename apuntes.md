@@ -60,17 +60,46 @@
 > Elimina un evento de un elemento.
 > Debes proporcionar el nombre del evento y la misma función de devolución de llamada que se agregó previamente con addEventListener().
 
+---------------------------------------------------------
+
+## JSON.parse(variable)
+> Esto hace q un codigo de tipo JSON pase a un objeto
+
+## JSON.stringify(variable)
+>Esto hace q un objeto pase a un JSON
+
+## const username = usernameInput.value;
+> El .value se usa cuando en el HTML tenga una etiqueta del formulario <input> <textarea>, otros y guarda el dato ingresado por el usuario en este caso el en la variable 'username'
+
+## localStorage.setItem('username', username)
+> En este caso el localStrorage.setItem('key',variable) guarda los datos del usuario ingresado por el Input que fue traido por el usernameInput que a su vez esta guardado en la variable username. 
+
+>Esto guarda el dato de forma local y se puede usar ese mismo dato en otro .js usando el key del mismo en este caso 'username' 
+
+    const usernameInput = document.getElementById('usernameInput');
+    const username = usernameInput.value;
+    localStorage.setItem('username', username)
+
+
+
 
 ## Event
 
-* Click: Ocurre cuando un elemento es presionado con el ratón.
-* Doble clic: Ocurre cuando un elemento es presionado dos veces rápidamente con el ratón.
-* Mouseover: Ocurre cuando el puntero del ratón se sitúa sobre un elemento.
-* Change: Ocurre cuando el valor de un elemento de formulario (como un cuadro de texto o una casilla de verificación) cambia.
-* Submit: Ocurre cuando se envía un formulario.
-* KeyDown, KeyUp: Ocurren cuando una tecla del teclado se presiona o se libera, respectivamente.
-* Load: Ocurre cuando un recurso, como una imagen, se ha cargado completamente.
-* DOMContentLoaded: Ocurre cuando el DOM de la página ha sido completamente cargado.
+* <Click>: Ocurre cuando un elemento es presionado con el ratón.
+
+* <Doble clic>: Ocurre cuando un elemento es presionado dos veces rápidamente con el ratón.
+
+* <Mouseover>: Ocurre cuando el puntero del ratón se sitúa sobre un elemento.
+
+* <Change>: Ocurre cuando el valor de un elemento de formulario (como un cuadro de texto o una casilla de verificación) cambia.
+
+* <Submit>: Ocurre cuando se envía un formulario.
+
+* <KeyDown>, <KeyUp>: Ocurren cuando una tecla del teclado se presiona o se libera, respectivamente.
+
+* <Load>: Ocurre cuando un recurso, como una imagen, se ha cargado completamente.
+
+* <DOMContentLoaded>: Ocurre cuando el DOM de la página ha sido completamente cargado.
 
 ------------------------------------------------
 
