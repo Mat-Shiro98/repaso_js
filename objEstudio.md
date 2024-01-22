@@ -27,11 +27,36 @@
 
 >Esta función, que está vinculada al evento 'DOMContentLoaded', se ejecuta cuando la estructura HTML de la página se ha cargado completamente. Su propósito es interactuar con el DOM: buscar un elemento con el id "contenedor", crear un nuevo párrafo y agregarlo como hijo al contenedor.
 
-2. 
-//Enunciado: 
-Escribe una función llamada  contarVocales que reciba una cadena de texto como parámetro y devuelva la cantidad de vocales (a, e, i, o, u) presentes en esa cadena.
 
+2. Mirar Fetch, catch , then , Promise, this y API
 
+// Función constructora
+      function Persona(nombre, appelido, edad, ciudad){
+          this.nombre = nombre;
+          this.appelido = appelido;
+          this.edad = edad;
+          this.ciudad = ciudad;
+      }
 
+// Promise
+      function hacerAlgo(resultado){
+          return new Promise((resolve, reject) =>{
+              setTimeout(( )=>{
+                  if(resultado) {
+                      resolve("Operación exitosa")
+                  } else{
+                      reject("Error en la operación")
+                  }
+              }, 4000)
+          })
+        };
 
+// Fetch
+      fetch('https://pokeapi.co/api/v2/pokemon/2')
+      .then(response => response.json())
+      .then(data => {
+          console.log(data)})
+          .catch((error) =>{
+              console.error('error:', error)
+      });
 

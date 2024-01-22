@@ -8,4 +8,18 @@ function agregarItem(){
     nuevoItemElemento.addEventListener('click',function(){
         this.classList.toggle('comprado')
     })
+
+    document.getElementById('listaCompras').appendChild(nuevoItemElemento)
+
+    nuevoItemInput.value = '';
+}
+
+
+function limpiarComprados(){
+    const lista = document.getElementById('listaCompras')
+    const elementoComprados = lista.querySelectorAll('.comprado')
+
+    elementoComprados.forEach(function(elemento){
+        lista.removeChild(elemento)
+    })
 }
