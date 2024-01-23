@@ -28,7 +28,7 @@
 >Esta función, que está vinculada al evento 'DOMContentLoaded', se ejecuta cuando la estructura HTML de la página se ha cargado completamente. Su propósito es interactuar con el DOM: buscar un elemento con el id "contenedor", crear un nuevo párrafo y agregarlo como hijo al contenedor.
 
 
-2. Mirar Fetch, catch , then , Promise, this y API
+2. Mirar Fetch, catch , then , Promise, this, API, async, try ,catch
 
 // Función constructora
       function Persona(nombre, appelido, edad, ciudad){
