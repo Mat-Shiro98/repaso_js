@@ -33,6 +33,42 @@
 
 
 
+// fetch('https://pokeapi.co/api/v2/pokemon/ditto')
+// .then(response => response.json())
+// .then(data => {
+//     console.log(data)})
+//     .catch((error) =>{
+//         console.error('error:', error)
+// });
 
+
+function obtenerInformacionPokemon(numeroPokemon) {
+    const url = `https://pokeapi.co/api/v2/pokemon/${numeroPokemon}/`;
+
+    // Hacer la solicitud a la API usando fetch
+    fetch(url)
+        .then(response => {
+            // Verificar si la solicitud fue exitosa (código 200)
+            if (!response.ok) {
+                throw new Error(`Error al obtener datos del Pokémon ${numeroPokemon}. Código de estado: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Procesar los datos según tus necesidades
+            const nombrePokemon = data.name;
+            const tiposPokemon = data.types.map(tipo => tipo.type.name);
+
+            // Imprimir información (o realizar otras acciones)
+            console.log(`Nombre: ${nombrePokemon}`);
+            console.log(`Tipos: ${tiposPokemon.join(', ')}`);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+}
+
+// Ejemplo de uso
+obtenerInformacionPokemon(25); // Obtener información del Pikachu (cambiar el número según el Pokémon deseado)
 
 
