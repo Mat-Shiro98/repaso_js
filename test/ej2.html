@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar tiempo de setTimeout en HTML</title>
+</head>
+
+<body>
+
+    <!-- Botón para iniciar la operación -->
+    <button onclick="iniciarOperacion()">Iniciar Operación</button>
+
+    <!-- Elemento HTML donde se mostrará el tiempo -->
+    <p id="tiempoMostrado"></p>
+
+    <script>
+        function operacionConRetardo() {
+            // Captura el tiempo de inicio
+            const tiempoInicio = new Date().getTime();
+
+            // Actualiza el contenido del elemento HTML
+            function actualizarTiempo() {
+                const tiempoTranscurrido = new Date().getTime() - tiempoInicio;
+                document.getElementById('tiempoMostrado').textContent = `Tiempo transcurrido: ${tiempoTranscurrido} milisegundos`;
+            }
+
+            console.log('Inicio de la operación');
+
+            setTimeout(() => {
+                console.log('Operación después del retardo');
+
+                // Llama a la función para actualizar el tiempo
+                actualizarTiempo();
+            }, 2000); // Retardo de 2 segundos
+
+            console.log('Fin de la operación');
+        }
+
+        // Función para iniciar la operación al hacer clic en el botón
+        function iniciarOperacion() {
+            // Llama a la función
+            operacionConRetardo();
+        }
+    </script>
+
+</body>
+
+</html>
