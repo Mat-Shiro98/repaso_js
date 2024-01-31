@@ -1,0 +1,20 @@
+Los "hooks" en React son una característica introducida en la versión 16.8 que permiten a los 
+desarrolladores utilizar características de React en componentes funcionales sin tener que 
+convertirlos en componentes de clase. Los hooks proporcionan una forma más sencilla y legible 
+de manejar el estado, los efectos secundarios y otras características en los componentes 
+funcionales.
+
+Algunos de los "hooks" más utilizados en React son:
+
+1. useState: Te permite agregar estado a los componentes funcionales. 
+Puedes declarar variables de estado y funciones para actualizarlas.
+
+2. useEffect: Te permite realizar efectos secundarios en componentes funcionales. 
+Esto puede incluir tareas como solicitudes a una API, suscripciones a eventos, etc.
+
+3. useContext: Facilita la gestión del contexto en componentes funcionales. 
+Puedes acceder al contexto global en lugar de pasarlo a través de props.
+
+4. useRef: Te permite acceder al DOM o mantener valores mutables que no causan un nuevo 
+renderizado.
+
