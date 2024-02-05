@@ -53,9 +53,28 @@ body {
 
 }
 
+/*Carrusel*/
+.carousel .carousel-inner{
+    overflow: hidden;
+    filter: brightness(50%)
+}
+
+.carousel h1 {
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    /* se utiliza para aplicar transformaciones a un elemento, como rotación, escala, sesgado, traslación (translate) o deformación. */
+    color: white;
+    z-index: 3;
+}
+
+.carousel h1 b{
+color: #ff7f50;
+}
+
+
 /*Nuestras Marcas*/
-
-
 #nuestrasMarcas {
     padding: 50px;
     background-color: #ff7f50;
@@ -74,18 +93,51 @@ body {
 #nuestrasMarcas #iconos {
     display: flex;
     justify-content: center;
-    background-color:  rgb(201, 201, 201);
+    background-color: rgb(201, 201, 201);
+    margin: 1rem;
+    padding: 1rem;
 }
 
-.marcas {
+#nuestrasMarcas #iconos .marcas {
     width: 100px;
     height: 100px;
-    margin-right: 100px;
+    margin: auto;
+}
+
+@media screen and (max-width: 700px) {
+    #iconos {
+        flex-direction: column;
+        align-items: stretch;
+        margin: auto;
+    }
+
+    #nuestrasMarcas #iconos .marcas {
+        margin-top: 1rem;
+    }
+
+    .carousel h1 {
+        font-size: 1.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    /* se utiliza para aplicar transformaciones a un elemento, como rotación, escala, sesgado, traslación (translate) o deformación. */
+        color: white;
+        z-index: 3;
+    }
 }
 
 
+/*Motos fotos*/
+.tituloKawasaki {
+    margin-top: 5rem;
+    max-width: 100%;
+}
 
-/* Card-Footer */
+.container .row {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
 
 .container .col-md-3 {
     display: flex;
@@ -98,42 +150,48 @@ body {
     box-shadow: 0 10px 10px black;
 }
 
-.copy {
-    font-size: 30px;
-    color: coral;
+@media screen and (max-width: 700px) {
+    .tituloKawasaki {
+        margin-top: 5rem;
+        max-width: 100%;
+    }
 }
 
-.lk {
-    display: flex;
-    justify-content: center;
+/*Contactos y redes*/
+#contactos {
+    background-color: rgba(225, 225, 225, 0.39);
+    padding: 0.5rem;
 }
 
-.lk img {
-    height: 100px;
-    box-shadow: 0 5px 5px black;
+#contactos .row {
+    background-color: #ff7f505a;
+    padding: 20px;
 }
 
-/*********************footer***********************/
-
-
-.card-body .imagen {
-
-
+#contactos .imagen {
     width: 50px;
     height: 50px;
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 700px) {
+    #contactos .row {
+        display: grid;
+    }
+
+    #contactps .row .col {
+        grid-template-columns: 1fr;
+    }
 
 }
 
-.card-body .imagen2 {
-
-    width: 50px;
-    height: 50px;
-
-}
-
-.card-body .imagen3 {
-    width: 50px;
-    height: 50px;
 
 
+
+/*Footer*/
+#copy {
+    background-color: #ff7f50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }
