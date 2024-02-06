@@ -1,0 +1,94 @@
+
+/*navbar*/
+#menuFijo {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Establece el sombreado */
+    z-index: 10;
+}
+
+.navbar {
+    background-color: burlywood;
+    color: blue;
+}
+
+.container-fluid img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.navbar-brand {
+    color: coral;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.navbar-toggler-icon {
+    background-color: coral;
+
+}
+
+.d-flex .btn {
+    border-radius: 50px;
+    border-color: black;
+    color: black;
+    background-color: coral;
+}
+
+.d-flex .form-control {
+    border-radius: 50px;
+    border-color: black;
+    color: black;
+
+}
+
+
+/*Formulario*/
+#formulario {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10rem;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #ffac53c7;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #ffaa00;
+}
+
+
+
+/*Footer*/
+#copy {
+    background-color: #ff7f50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 8rem;
+}

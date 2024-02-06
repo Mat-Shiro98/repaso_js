@@ -8,10 +8,12 @@ body {
 
 /*navbar*/
 #menuFijo {
-    position: -webkit-sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
-    padding: 10px;
-    z-index: 100;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Establece el sombreado */
+    z-index: 10;
 }
 
 
@@ -54,7 +56,7 @@ body {
 }
 
 /*Carrusel*/
-.carousel .carousel-inner{
+.carousel .carousel-inner {
     overflow: hidden;
     filter: brightness(50%)
 }
@@ -64,13 +66,14 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);    /* se utiliza para aplicar transformaciones a un elemento, como rotación, escala, sesgado, traslación (translate) o deformación. */
+    transform: translate(-50%, -50%);
+    /* se utiliza para aplicar transformaciones a un elemento, como rotación, escala, sesgado, traslación (translate) o deformación. */
     color: white;
     z-index: 3;
 }
 
-.carousel h1 b{
-color: #ff7f50;
+.carousel h1 b {
+    color: #ff7f50;
 }
 
 
@@ -119,7 +122,8 @@ color: #ff7f50;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);    /* se utiliza para aplicar transformaciones a un elemento, como rotación, escala, sesgado, traslación (translate) o deformación. */
+        transform: translate(-50%, -50%);
+        /* se utiliza para aplicar transformaciones a un elemento, como rotación, escala, sesgado, traslación (translate) o deformación. */
         color: white;
         z-index: 3;
     }
@@ -184,6 +188,12 @@ color: #ff7f50;
 
 }
 
+
+
+/*Mapa de Google*/
+#map-container {
+    padding: 10rem;
+}
 
 
 
