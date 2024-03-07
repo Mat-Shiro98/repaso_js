@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+#caja{
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+  background-color: #61dafb;
+}
